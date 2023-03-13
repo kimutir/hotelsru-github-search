@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="repositories">
+            <form action="" class="repositories-form">
+                <div class="repositories-form__content">
+                    <label for="repository-name" class="repositories-form__content_lable">Репозиторий:</label>
+                    <div class="repositories-form__content_input">
+                        <input id="repository-name" type="text" autocomplete="off" />
+                        <p class="repositories-form__content_name-error">Слишком короткое название</p>
+                    </div>
+                </div>
+                <input type="submit" value="Поиск" />
+            </form>
+            <ul class="repositories-list"></ul>
+            <div class="repositories-loader">
+                <div class="lds-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <p class="repositories-empty">Ничего не найдено</p>
+        </main>
+        <script type="text/javascript" src="bundle.js"></script>
+    </body>
+</html>
