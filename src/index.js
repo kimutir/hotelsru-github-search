@@ -1,7 +1,7 @@
 import './style.scss';
 
-const repoInput = document.querySelector('#repository-name');
-const findRepoForm = document.querySelector('.repositories-form');
+const findRepoForm = document.forms['find-repositories'];
+const repoInput = findRepoForm.elements.name;
 const repoList = document.querySelector('.repositories-list');
 const listEmpty = document.querySelector('.repositories-empty');
 const nameError = document.querySelector('.repositories-form__content_name-error');
